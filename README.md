@@ -74,6 +74,7 @@ You can replace the audio files in the `/music` folder to change the background 
 
 ## File Structure
 
+'''
 /game-directory
 |-- index.html        # Main HTML file containing the game layout
 |-- style.css         # CSS for styling the game
@@ -85,6 +86,6 @@ You can replace the audio files in the `/music` folder to change the background 
 |-- /image            # Folder containing images used in the game
 |   |-- img1.jpg      # Image for marmot in hole
 |   |-- img3.jpg      # Alternate image for marmot
-
+'''
 
 Enjoy your Whack-a-Mole
