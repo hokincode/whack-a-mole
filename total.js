@@ -103,12 +103,12 @@ async function run_experiment() {
     // await training_mapping_1_recall()
     // await training_mapping_2_recall()
     // await training_mapping_3_recall()
-    program = 'entering_inference'
-    await entering_inference()
-    program = 'training_inference'
-    await training_inference()
-    program = 'leaving_inference'
-    await leaving_inference()
+    // program = 'entering_inference'
+    // await entering_inference()
+    // program = 'training_inference'
+    // await training_inference()
+    // program = 'leaving_inference'
+    // await leaving_inference()
     program = 'mixture_training_mapping'
     await mixture_training_mapping()
     program = 'downloadArrayAsFile'
