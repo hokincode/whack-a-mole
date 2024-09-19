@@ -1,5 +1,9 @@
 # Whack-a-Mole Game
 
+## LICENSE
+
+This game is licensed under the a custom License. You are free to use, modify, and distribute this software under the terms of the MIT License.
+
 ## Overview
 Welcome to **Whack-a-Mole**, an interactive browser-based game where you challenge your reflexes by whacking marmots as they pop out of their holes. The game uses your keyboard to map keys to each hole, and your goal is to hit the marmots as fast as possible to earn points. Have fun and improve your reaction speed!
 
