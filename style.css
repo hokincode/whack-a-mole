@@ -1,0 +1,409 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.con {
+    width: 1200px;
+    height: 800px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.start_game {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #98DF83;
+    left: 0%;
+    top: 0%;
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    flex-direction: column;
+}
+
+.start_des{
+    width: 500px;
+    padding: 20px;
+    border: 4px solid white;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, serif;
+    border-radius: 5px;
+}
+
+.start_btn {
+    width: 280px;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    border: 2px solid white;
+    font-family: Impact, serif;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.start_btn:hover {
+    background: white;
+    color: #98DF83;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.game_con_center {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns with equal fractions of the available space */
+    grid-template-rows: auto; /* Rows adjust their height automatically based on their content */
+    justify-content: center; /* Horizontally centers the grid items within the grid container */
+    align-items: center; /* Vertically centers the grid items within their grid area */
+    text-align: center; /* Centers text inside the grid items */
+    padding-bottom: 10vh; /* Adds bottom padding relative to the height of the viewport */
+    background: #98DF83; /* Background color */
+    position: absolute; /* Changed to absolute to allow centering via top/left/transform */
+    width: 960px; /* Fixed width */
+    height: 540px; /* Fixed height */
+    top: 50%; /* Position the top edge of the element at the middle of the container */
+    left: 50%; /* Position the left edge of the element at the middle of the container */
+    transform: translate(-50%, -50%); /* Shift the element back by half its width and height to center it */
+}
+
+
+.trial {
+    position: absolute !important;
+    left: 5px;
+    top: 5px;
+    border: 4px solid white;
+    padding: 4px 30px;
+    color: white;
+    font-size: 26px;
+}
+
+.score {
+    position: absolute !important;
+    right: 5px;
+    top: 5px;
+    border: 4px solid white;
+    padding: 4px 30px;
+    color: white;
+    font-size: 26px;
+}
+
+.game_con > div {
+    position: relative;
+}
+
+/* Ensure the mouse's container div is positioned relatively */
+.mouse {
+    position: relative;
+    height: 100%; /* Make sure the container has a defined height */
+}
+
+/* CSS to resize and position the hammer image inside a div with the class "hammer" */
+.mouse img {
+    position: absolute;
+    top: 0; /* Align to the top of the container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    width: 20%; /* Width is 1/5 of the container's width */
+    height: auto; /* Height adjusts automatically to maintain aspect ratio */
+}
+
+/* Ensure the mouse_and_hammer_together's container div is positioned relatively */
+.mouse_and_hammer_together {
+    position: relative;
+    height: 100%; /* Make sure the container has a defined height */
+}
+
+/* CSS to resize and position the hammer image inside a div with the class "hammer" */
+.mouse_and_hammer_together img {
+    position: absolute;
+    top: 0; /* Align to the top of the container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    width: 20%; /* Width is 1/5 of the container's width */
+    height: auto; /* Height adjusts automatically to maintain aspect ratio */
+}
+
+.end_game {
+    width: 100%;
+    height: 100%;
+    background: #2B2B2B;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    transition: all 1s;
+}
+
+.end_game > div {
+    color: white;
+
+}
+
+.game_over {
+    font-size: 3vw;
+    font-family: Impact, serif;
+}
+
+.game_score {
+    font-size: 40px;
+    font-family: "Arial Black", serif;
+    margin-top: 50px;
+}
+
+.restart {
+    border: 3px solid white;
+    font-size: 2vw;
+    font-family: Impact, serif;
+    padding: 10px 40px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.restart:hover {
+    background: white;
+    color: #2B2B2B;
+}
+
+  /* Ensure the hammer's container div is positioned relatively */
+.hammer {
+    position: relative;
+    height: 100%; /* Make sure the container has a defined height */
+}
+
+/* CSS to resize and position the hammer image inside a div with the class "hammer" */
+.hammer img {
+    position: absolute;
+    top: 0; /* Align to the top of the container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    width: 20%; /* Width is 1/5 of the container's width */
+    height: auto; /* Height adjusts automatically to maintain aspect ratio */
+}
+
+#inference-image-container {
+  position: fixed; /* Position relative to the viewport */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust the position to truly center the div */
+  z-index: 1000; /* Ensure it's on top of everything else */
+}
+
+#infer-current-container {
+  position: fixed; /* Position relative to the viewport */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust the position to truly center the div */
+  z-index: 1000; /* Ensure it's on top of everything else */
+}
+
+#correct-container {
+  position: fixed; /* Position relative to the viewport */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust the position to truly center the div */
+  z-index: 1000; /* Ensure it's on top of everything else */
+}
+
+#wrong-container {
+  position: fixed; /* Position relative to the viewport */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust the position to truly center the div */
+  z-index: 1000; /* Ensure it's on top of everything else */
+}
+
+/* Try to edit the box for salient stimuli*/
+/*
+.context_cue {
+    position: absolute !important;
+    left: 175px;
+    top: 5px;
+    border: 4px solid white;
+    padding: 10px 300px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0); /* Change this as needed */
+/*}
+/*
+.context_cue_rose {
+    position: absolute !important;
+    left: 175px;
+    top: 5px;
+    border: 4px solid white;
+    padding: 10px 300px;
+    color: white;
+    background-color: rgba(255, 0, 127, .7); /* Change this as needed */
+/*}
+
+.context_cue_blue {
+    position: absolute !important;
+    left: 175px;
+    top: 5px;
+    border: 4px solid white;
+    padding: 10px 300px;
+    color: white;
+    background-color: rgba(107, 207, 246, .7); /* Change this as needed */
+/*}
+
+.context_cue_purple {
+    position: absolute !important;
+    left: 175px;
+    top: 5px;
+    border: 4px solid white;
+    padding: 10px 300px;
+    color: white;
+    background-color: rgba(136, 88, 243, .7); /* Change this as needed */
+/*}
+*/
+
+.context_cue {
+    position: absolute;
+    left: 175px;
+    top: 5px;
+    border: 4px solid white;
+    padding: 10px 300px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1000; /* High value to ensure it's on top */
+}
+
+.context_cue::before,
+.context_cue::after {
+    content: "";
+    position: absolute;
+    border: 4px solid white;
+    width: 140px; /* adjust size as needed */
+    height: 140px; /* adjust size as needed */
+    background-color: rgba(0, 0, 0, 0); /* adjust color/opacity as needed */
+    z-index: 1001; /* Ensure pseudo-elements are also on top */
+}
+
+.context_cue::before {
+    top: 240px; /* adjust position as needed */
+    left: -70px; /* adjust position as needed */
+}
+
+.context_cue::after {
+    top: 240px; /* adjust position as needed */
+    right: -70px; /* adjust position as needed */
+}
+
+/* new rose box */
+
+.context_cue_rose {
+    position: absolute;
+    left: 175px;
+    top: 5px;
+    border: 4px solid white;
+    padding: 10px 300px;
+    color: white;
+    background-color: rgba(255, 0, 127, .7);
+    z-index: 1000; /* High value to ensure it's on top */
+}
+
+.context_cue_rose::before,
+.context_cue_rose::after {
+    content: "";
+    position: absolute;
+    border: 4px solid white;
+    width: 140px; /* adjust size as needed */
+    height: 140px; /* adjust size as needed */
+    background-color: rgba(255, 0, 127, .7); /* adjust color/opacity as needed */
+    z-index: 1001; /* Ensure pseudo-elements are also on top */
+}
+
+.context_cue_rose::before {
+    top: 230px;
+    left: -70px;
+}
+
+.context_cue_rose::after {
+    top: 230px;
+    right: -70px;
+}
+
+/* new blue box */
+.context_cue_blue {
+    position: absolute;
+    left: 175px;
+    top: 5px;
+    border: 4px solid white;
+    padding: 10px 300px;
+    color: white;
+    background-color: rgba(107, 207, 246, .7);
+    z-index: 1000; /* High value to ensure it's on top */
+}
+
+.context_cue_blue::before,
+.context_cue_blue::after {
+    content: "";
+    position: absolute;
+    border: 4px solid white;
+    width: 140px; /* adjust size as needed */
+    height: 140px; /* adjust size as needed */
+    background-color: rgba(107, 207, 246, .7); /* adjust color/opacity as needed */
+    z-index: 1001; /* Ensure pseudo-elements are also on top */
+}
+
+.context_cue_blue::before {
+    top: 230px; /* adjust position as needed */
+    left: -70px; /* adjust position as needed */
+}
+
+.context_cue_blue::after {
+    top: 230px; /* adjust position as needed */
+    right: -70px; /* adjust position as needed */
+}
+
+/* new purple box */
+
+.context_cue_purple {
+    position: absolute;
+    left: 175px;
+    top: 5px;
+    border: 4px solid white;
+    padding: 10px 300px;
+    color: white;
+    background-color: rgba(136, 88, 243, .7);
+    z-index: 1000; /* High value to ensure it's on top */
+}
+
+.context_cue_purple::before,
+.context_cue_purple::after {
+    content: "";
+    position: absolute;
+    border: 4px solid white;
+    width: 140px; /* adjust size as needed */
+    height: 140px; /* adjust size as needed */
+    background-color: rgba(136, 88, 243, .7); /* adjust color/opacity as needed */
+    z-index: 1001; /* Ensure pseudo-elements are also on top */
+}
+
+.context_cue_purple::before {
+    top: 230px; /* adjust position as needed */
+    left: -70px; /* adjust position as needed */
+}
+
+.context_cue_purple::after {
+    top: 230px; /* adjust position as needed */
+    right: -70px; /* adjust position as needed */
+}
+
+

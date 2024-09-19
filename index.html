@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<audio src="./music/banc.mp3" class="music1"></audio>
+<audio src="./music/chui.mp3" class="music2"></audio>
+<audio src="./music/da.mp3" class="music3"></audio>
+<div class="start_game">
+        <div class="start_des">
+            <h2>Welcome to Whack-a-Mole</h2>
+            <p>Embark on a Whimsical Adventure and Have Fun!!</p>
+            <br>
+            You'll begin with the practice-mapping block. As marmots pop up from their holes, press the corresponding keys (H, U, I, B, L) on your keyboard to "hit" them. Remember, you can only press each key once per marmot. There are three different key-to-hole mapping contexts. The color in the white boxes indicates which mapping context you are in. Press the key that matches the context to hit the marmot! Once you've mastered the three mappings and passed our criterion, you'll move on to the practice-inference block. In this block, the context cue will disappear, and you'll need to infer the context and press the correct key to hit the marmot, and you won't receive feedback if you do not press the right key. Randomly, during this block, you'll need to press "A," "S," or "D" to tell us which context you infer you're in. Good luck and have fun!
+        </div>
+        <div class = "start_btn" onClick="redirectToSecondPage()">START GAME</div>
+</div>
+<div class="game_con_center">
+        <div class="context_cue"></div>
+        <div class="game3"><img src="image/img1.jpg"/></div>
+        <div class="game9"><img src="image/img3.jpg"/></div>
+        <div class="game4"><img src="image/img1.jpg"/></div>
+
+        <div class="game9"><img src="image/img3.jpg"/></div>
+        <div class="game2"><img src="image/img1.jpg"/></div>
+        <div class="game9"><img src="image/img3.jpg"/></div>
+
+        <div class="game0"><img src="image/img1.jpg"/></div>
+        <div class="game9"><img src="image/img3.jpg"/></div>
+        <div class="game1"><img src="image/img1.jpg"/></div>
+        <!-- <div class="trial">0</div> -->
+        <div class="score">0</div>
+</div>
+<div id="inference-image-container"></div>
+<div id="infer-current-container"></div>
+<div id="correct-container"></div>
+<div id="wrong-container"></div>
+<script src="total.js"></script>
+</body>
+</html>
