@@ -83,6 +83,7 @@ You can replace the audio files in the `/music` folder to change the background 
 |   |-- banc.mp3      # Background music 1
 |   |-- chui.mp3      # Background music 2
 |   |-- da.mp3        # Background music 3
+|-- /image            # image materials
 ```
 
 Enjoy your Whack-a-Mole
