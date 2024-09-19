@@ -23,12 +23,6 @@ Welcome to **Whack-a-Mole**, an interactive browser-based game where you challen
    - A color box at the top of the game indicates which key-to-hole mapping context you're in:
      - **Rose (Pink)**, **Blue**, or **Purple**. The game will adjust based on the context, so keep an eye out for the color changes!
 
-4. **Score**:
-   - Each successful whack earns you points. Your score is displayed at the top right of the game.
-
-5. **End Game**: 
-   - When the game ends, a game-over screen will appear, showing your final score and giving you the option to **Restart**.
-
 ## Setup Instructions
 
 1. **Download or Clone** the game repository to your local machine.
