@@ -35,8 +35,6 @@ let show_mouse_and_hammer = `
 </div>
 `;
 
-
-
 let inference_stimuli_sequence = generateValidInferenceSequence(number_of_inference_stimuli_mappings)
 let mixture_sequence = generateValidInferenceSequence(number_of_inference_stimuli_mappings)
 let array_or_number_of_training_trials_in_each_inference_mapping = distributeApples(number_of_inference_stimuli_mappings,
