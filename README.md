@@ -83,9 +83,6 @@ You can replace the audio files in the `/music` folder to change the background 
 |   |-- banc.mp3      # Background music 1
 |   |-- chui.mp3      # Background music 2
 |   |-- da.mp3        # Background music 3
-|-- /image            # Folder containing images used in the game
-|   |-- img1.jpg      # Image for marmot in hole
-|   |-- img3.jpg      # Alternate image for marmot
 ```
 
 Enjoy your Whack-a-Mole
