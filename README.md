@@ -5,11 +5,11 @@ Copyright (c) [2024] Hokin Deng
 ## LICENSE
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense for non-commericial uses. 
 
-## Overview
-Welcome to **Whack-a-Mole**, an interactive browser-based game where you challenge your reflexes by whacking marmots as they pop out of their holes. The game uses your keyboard to map keys to each hole, and your goal is to hit the marmots as fast as possible to earn points. Have fun and improve your reaction speed!
-
 ## Current Version Investigates Hierarchical Representation in the Brain 
 ![alt Tree-like Structure vs. Flat Structure](https://github.com/hokincode/whack-a-mole/blob/main/whack2.jpg)
+
+## Overview
+Welcome to **Whack-a-Mole**, an interactive browser-based game where you challenge your reflexes by whacking marmots as they pop out of their holes. The game uses your keyboard to map keys to each hole, and your goal is to hit the marmots as fast as possible to earn points. Have fun and improve your reaction speed!
 
 ## Game Features
 - **Interactive Key Mapping**: The game features a practice-mapping block, where you can learn the key mappings (H, U, I, B, L) for the marmots that pop up. There are three different key-to-hole mapping contexts indicated by colors: Rose, Blue, and Purple.
